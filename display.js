@@ -4,7 +4,7 @@ function display() {
 	let table = {};
 	let columns = {};
 	let columnsCount = 0;
-	let columnWidth = 70;
+	let columnWidth = 60;
 	let str = '';
 
 	for (let date in dates) {
