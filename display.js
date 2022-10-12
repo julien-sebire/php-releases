@@ -4,7 +4,7 @@ function display() {
 	let table = {};
 	let columns = {};
 	let columnsCount = 0;
-	let columnWidth = 60;
+	let columnWidth = 55;
 	let str = '';
 
 	for (let date in dates) {
@@ -59,7 +59,7 @@ function display() {
 	for (let column in bars) {
 		let bounds = bars[column];
 		let version = minorVersion(bounds.version);
-		str += '<div class="version ' + getSupport(version) + '" style="top:' + (bounds.from - 20) + 'px;left:' + (column * columnWidth) + 'px;height:' + (bounds.to - bounds.from + 35) + 'px;width:' + (columnWidth - 10) + 'px;" title="Version ' + version + '">' + version + '</div>';
+		str += '<div class="version ' + getSupport(version) + '" style="top:' + (bounds.from - 20) + 'px;left:' + (column * columnWidth) + 'px;height:' + (bounds.to - bounds.from + 35) + 'px;width:' + (columnWidth - 5) + 'px;" title="Version ' + version + '">' + version + '</div>';
 	}
 
 	// releases
@@ -67,7 +67,7 @@ function display() {
 		let day = table[days];
 		for (column in day.versions) {
 			let version = day.versions[column];
-			str += '<div class="release" style="top:' + days + 'px;left:' + (column * columnWidth) + 'px;width:' + (columnWidth - 10) + 'px;" title="' + version + ' released ' + day.date + '">' + version + '</div>';
+			str += '<div class="release" style="top:' + days + 'px;left:' + (column * columnWidth) + 'px;width:' + (columnWidth - 5) + 'px;" title="' + version + ' released ' + day.date + '">' + version + '</div>';
 		}
 	}
 
