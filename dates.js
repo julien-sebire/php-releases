@@ -1,7 +1,7 @@
 function getSupport(version) {
 	let support = {
 		'8.1': 'security',
-		'8.2': 'active',
+		'8.2': 'security',
 		'8.3': 'active',
 		'8.4': 'active',
 		'8.5': 'future'
