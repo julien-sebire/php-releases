@@ -1,10 +1,10 @@
 function getSupport(version) {
 	let support = {
-		'8.1': 'security',
 		'8.2': 'security',
-		'8.3': 'active',
+		'8.3': 'security',
 		'8.4': 'active',
-		'8.5': 'future'
+		'8.5': 'active',
+		'8.6': 'future'
 	};
 	return support[version] ?? 'eol';
 }
